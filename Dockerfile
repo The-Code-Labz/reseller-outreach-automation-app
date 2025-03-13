@@ -13,8 +13,8 @@ RUN npm install --force
 # Copy the current directory contents into the container at /app
 COPY . .
 
-# Make port 3000 available to the world outside this container
-EXPOSE 3000
+# Make port 5173 available to the world outside this container
+EXPOSE 5173
 
 # Start the app when the container launches
 CMD [ "npm", "run", "dev" ]
