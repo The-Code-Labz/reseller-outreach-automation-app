@@ -1,15 +1,13 @@
 version: "3.8"
 
 services:
-  web:
+  app:
     build: .
     ports:
       - "3000:3000"
     environment:
-      - NODE_ENV=production
-      - PORT=3000
-      - GEMINI_API_TOKEN=your_gemini_api_token
+      - GEMINI_API_TOKEN=${GEMINI_API_TOKEN}
     volumes:
       - .:/app
-    stdin_open: true # Keep container running
+    stdin_open: true # keep the container running even without attached tty
     tty: true
