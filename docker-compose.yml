@@ -7,7 +7,5 @@ services:
       - "3000:3000"
     environment:
       - GEMINI_API_TOKEN=${GEMINI_API_TOKEN}
-    volumes:
-      - .:/app
     stdin_open: true # keep the container running even without attached tty
     tty: true
